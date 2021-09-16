@@ -20,4 +20,6 @@ WORKDIR /app
 
 COPY --from=build /build/build ./app
 
+EXPOSE 5000
+
 CMD ["serve", "-s", "app"]
